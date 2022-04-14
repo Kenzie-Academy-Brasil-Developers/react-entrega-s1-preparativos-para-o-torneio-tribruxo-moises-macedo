@@ -1,0 +1,46 @@
+@import './global.scss';
+
+
+
+.button--modal{ 
+    margin-top: 9px;
+    width: 30px; 
+    margin-left:-5px;
+    border: 2px solid $color-primary;  
+    background-color: #fff;
+    color: $color-primary;
+    font-size: 16px;
+    cursor: pointer; 
+    font-weight: 700;
+    opacity: 0.7; 
+
+    &:hover {
+        animation: shake3856 0.3s linear infinite both;
+        opacity: 1;
+
+    }
+    &:active{
+        background-color: $color-primary;
+        color: #fff;
+    }
+
+}
+
+.button--active{
+    opacity: 1;
+}
+
+.modal--description{
+    font-weight: 700;
+    font-size: 12px;
+    
+}
+
+.description{
+   span{
+    font-weight: 400;
+    font-size: 14px;
+
+   } 
+}
+

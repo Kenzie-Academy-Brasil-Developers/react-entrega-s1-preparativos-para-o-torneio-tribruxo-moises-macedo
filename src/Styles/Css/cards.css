@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  cursor: url("../../Assests/Imgs/cursor.png"), auto; }
+
+@font-face {
+  font-family: 'Harry Icons';
+  src: url("/src/Assests/fonts/_harry/harry_potter_and_the_dingbat_font.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Harry Potter";
+  src: url("/src/Assests/fonts/_harry/HARRYP__.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@keyframes colors {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes ani {
+  0% {
+    background-position: 0%; }
+  100% {
+    background-position: 400%; } }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg); }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg); } }
+@keyframes btn-anim1 {
+  0% {
+    left: -100%; }
+  50% {
+    left: 100%; }
+  100% {
+    bottom: 100%; } }
+@keyframes btn-anim2 {
+  0% {
+    top: -100%; }
+  50% {
+    top: 100%; }
+  100% {
+    bottom: 100%; } }
+@keyframes btn-anim3 {
+  0% {
+    right: -100%; }
+  50% {
+    right: 100%; }
+  100% {
+    bottom: 100%; } }
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%; }
+  50% {
+    bottom: 100%; }
+  100% {
+    bottom: 100%; } }
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+.container--cards--geral {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 730px) {
+    .container--cards--geral {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      justify-content: flex-start;
+      height: 470px; } }
+
+.container--img {
+  text-align: center; }
+  .container--img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 10px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover; }
+
+.cards--geral {
+  width: 230px;
+  height: 380px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: 5px solid #383838;
+  box-shadow: 10px 37px 47px -10px rgba(56, 56, 56, 0.43);
+  -webkit-box-shadow: 10px 37px 47px -10px rgba(56, 56, 56, 0.43);
+  -moz-box-shadow: 10px 37px 47px -10px rgba(56, 56, 56, 0.43); }
+  @media (max-width: 900px) {
+    .cards--geral {
+      margin-left: 10px; } }
+
+.list--name {
+  margin-top: 10px;
+  margin-left: 10px; }
+  .list--name p {
+    font-weight: 700; }
+    .list--name p span {
+      font-weight: normal; }
+
+.list--house {
+  margin-left: 10px; }
+  .list--house p {
+    font-weight: 700; }
+    .list--house p span {
+      font-weight: normal; }
+
+.container--button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; }
+  @media (max-width: 730px) {
+    .container--button {
+      margin-top: 10px; } }
+  .container--button button {
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #203239, #A2B38B, #3A3845, #22577E);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    cursor: pointer; }
+  .container--button button:hover {
+    animation: ani 8s linear infinite;
+    border: none; }
+  .container--button button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #203239, #A2B38B, #3A3845, #22577E);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s; }
+  .container--button button:hover::before {
+    filter: blur(20px); }
+  .container--button button:active {
+    background: linear-gradient(32deg, #203239, #A2B38B, #3A3845, #22577E); }
+
+.Slytherin {
+  background-color: red; }
+
+.cards--Gryffindor {
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #7f0909, #ffc500, #7f0909 100%) 1; }
+
+.cards--Slytherin {
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #0d6217, #AAAAAA, #0d6217 100%) 1; }
+
+.cards--Hufflepuff {
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #eee117, #000000, #eee117 100%) 1; }
+
+.cards--Ravenclaw {
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #000a90, #946b2d, #000a90 100%) 1; }
+
+/*# sourceMappingURL=cards.css.map */
