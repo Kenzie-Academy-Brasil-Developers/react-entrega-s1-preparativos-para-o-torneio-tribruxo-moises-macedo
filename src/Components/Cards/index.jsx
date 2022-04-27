@@ -43,9 +43,9 @@ const reload = () => {
         
 
     useEffect (() => {
-        fetch(`http://hp-api.herokuapp.com/api/characters/students?postsPerPage=${postsPerPage}`)
+        fetch(`https://hp-api-ken.herokuapp.com/api/characters/students?postsPerPage=${postsPerPage}`)
         .then((res) => res.json())
-        .then((res) => setPosts(res.filter((item) => item.image !== "")))
+        .then((res) => setPosts(res.filter((item) => item.house !== "")))
         .catch((err)=> console.log(err))
     }, [postsPerPage]);
 
